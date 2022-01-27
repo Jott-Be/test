@@ -36,7 +36,7 @@
 
 		<div class="reveal">
 		<div class="slides">
-						<section>
+			<section data-menu-title="Feedback als Lernamigo">
 				<h3>Die Lernamigos &</h3>
 				<h2>Feedbackkompetenz</h2>
 				<p><small>Modul 2: Feedback als Lernamigo</small></p>
@@ -47,13 +47,13 @@
 						
 			</section>
 
-			<section data-background="https://i.giphy.com/media/RWRaWUbaEDQ0fuIC18/giphy.webp" data-background-size="auto 100%" data-background-color="black">
+			<section data-menu-title="Feedback als Lernamigo" data-background="https://i.giphy.com/media/RWRaWUbaEDQ0fuIC18/giphy.webp" data-background-size="auto 100%" data-background-color="black">
 				<div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px;">
 				<b>Willkommen zurück!</b>
 			</div>
 			</section>
 
-			<section>
+			<section data-menu-title="Feedback als Lernamigo">
 				Nachdem Du die Grundlagen zu „Was ist Feedback?“ in Modul 1 kennengelernt hast, wollen wir im folgenden Modul 2 genauer auf das <b>Feedback als Lernamigo</b> eingehen.
 			</section>
 
@@ -70,7 +70,7 @@
 				</dl>
 			</section>
 
-			<section>
+			<section data-menu-title="Feedback im Kontext Lernen">
 			<small>
 				Warum ist Feedback so enorm wichtig für unser Lernen?<br>
 				Und welche Rolle spielt das Feedback geben und nehmen für das Unternehmen?<br>
@@ -118,7 +118,7 @@
 			</section>
 
 			<section>
-				<section>
+				<section data-menu-title="Feedbacklandschaft">
 					<b>Das Ziel ist</b> der Aufbau einer Feedbacklandschaft, um sich an die verändernden Rahmenbedingungen anzupassen.<br>
 					<br>
 					<b>Lernauftrag:</b> Nimm dir 5 min Zeit und überlege dir 3 wichtige Ansprüche, die eine solche Feedbacklandschaft im Unternehmen erfüllen sollte.<br>
@@ -140,7 +140,7 @@
 				</section>
 			</section>
 
-			<section>
+			<section data-menu-title="Feedback im Kontext Lernen">
 				Geschafft! Punkt 1 der Agenda &#10004;<br>
 				Jetzt hast Du dir eine kurze Pause verdient.<br>
 				Wie wäre es mit Aufstehen und einmal durchstrecken?<br>
@@ -247,7 +247,7 @@
 				</section>
 			</section>
 
-			<section>
+			<section data-menu-title="Bedeutung von Feedback">
 				Geschafft! Punkt 2 der Agenda &#10004;<br>
 				Bevor wir zu unserem letzten Punkt in der Agenda kommen, kurz durchatmen.<br>
 				Wie wäre es mit einem Kaffee?
@@ -355,7 +355,7 @@
 				</section>
 			</section>
 
-			<section>
+			<section data-menu-title="Feedbackanlässe und Timing">
 				Puhhhh, Geschafft! Punkt 3 der Agenda &#10004;<br>
 				<br>
 				Glückwunsch, Du hast Modul 2 erfolgreich abgeschlossen
@@ -367,13 +367,13 @@
 
 		</div>
 		</div>
-		</div>
-		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -383,6 +383,7 @@
 				center: true,
 				transition: 'zoom', // none/fade/slide/convex/concave/zoom
 				// More info https://github.com/hakimel/reveal.js#dependencies
+				plugins: [ RevealMenu ],
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -390,7 +391,8 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/search/search.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/menu/menu.js'}
 				]
 			});
 		</script>
